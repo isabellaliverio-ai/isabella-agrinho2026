@@ -1,0 +1,242 @@
+/* Configurações Gerais e Paleta Neon/Tecnológica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #e0e0ff;
+    background-color: #0a0a16; /* Fundo azul escuro espacial */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(13, 13, 33, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 2px solid #4a148c; /* Linha roxa */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00e5ff; /* Azul Ciano/Neon */
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #9c27b0; /* Roxo */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b0bec5;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(10, 10, 22, 0.7), rgba(74, 20, 140, 0.4)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px rgba(156, 39, 176, 0.8);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0e0ff;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #4a148c, #00e5ff);
+    color: #fff;
+    padding: 14px 36px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(156, 39, 176, 0.6);
+}
+
+/* Seções Gerais */
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.bg-alt {
+    background-color: #12122c; /* Variação de azul escuro */
+}
+
+h2 {
+    font-size: 36px;
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #b0bec5;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+/* Cards (Agronegócio e Familiar) */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a3a;
+    border: 1px solid #4a148c;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 450px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(156, 39, 176, 0.3);
+    border-color: #00e5ff;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent, #1a1a3a);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    padding: 20px 25px 10px 25px;
+    color: #00e5ff;
+    font-size: 22px;
+}
+
+.card p {
+    padding: 0 25px 25px 25px;
+    color: #b0abc4;
+    font-size: 15px;
+}
+
+/* Abas Interativas (Sustentabilidade) */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    gap: 15px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    border: 2px solid #4a148c;
+    color: #e0e0ff;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background: linear-gradient(45deg, #4a148c, #00247d);
+    border-color: #00e5ff;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.tab-content {
+    background: #1a1a3a;
+    border-left: 5px solid #00e5ff;
+    padding: 35px;
+    border-radius: 0 12px 12px 0;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tab-content h3 {
+    color: #9c27b0;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.tab-content p {
+    color: #e0e0ff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #05050d;
+    color: #7171a1;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    border-top: 1px solid #1a1a3a;
+}
