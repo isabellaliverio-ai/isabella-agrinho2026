@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Tech</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a potência de produção e a preservação do meio ambiente tecnológica.</p>
+            <a href="#pilares" class="btn">Conhecer o Futuro</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="section">
+        <h2>Os Dois Motores da Nossa Alimentação</h2>
+        <p class="subtitle">Como a grande produção e a tradição familiar se complementam com inovação.</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c3c86?auto=format&fit=crop&w=500&q=80" alt="Tecnologia no Agronegócio">
+                </div>
+                <h3>Agronegócio Inteligente</h3>
+                <p>Responsável pelo abastecimento global em larga escala. Utiliza inteligência artificial, drones e sensores para otimizar o uso de recursos como água e insumos, maximizando a produtividade sem expandir desenfreadamente as áreas de plantio.</p>
+            </div>
+
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=500&q=80" alt="Agricultura Familiar">
+                </div>
+                <h3>Agricultura Familiar</h3>
+                <p>A força que alimenta as mesas locais e preserva a cultura do campo. Desempenha um papel crucial na rotação de culturas e na proteção da biodiversidade regional, aliando o conhecimento tradicional às práticas ecológicas modernas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustentabilidade" class="section bg-alt">
+        <h2>Inovações para a Sustentabilidade</h2>
+        <p class="subtitle">Clique nas abas para explorar as tecnologias que estão moldando o campo.</p>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="alterarConteudo('direto')">Plantio Direto</button>
+            <button class="tab-btn" onclick="alterarConteudo('ilpf')">Sistema ILPF</button>
+            <button class="tab-btn" onclick="alterarConteudo('bio')">Bioinsumos</button>
+        </div>
+
+        <div id="conteudo-sustentavel" class="tab-content">
+            <h3>Plantio Direto</h3>
+            <p>Técnica inovadora que cultiva a terra sem arar, mantendo os restos vegetais da colheita anterior. Isso protege o solo de erosões, retém a umidade de forma eficiente e evita o desgaste químico da terra.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroTech Sustentável - Tecnologia a serviço da natureza.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
